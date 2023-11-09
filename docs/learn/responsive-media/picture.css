@@ -1,1 +1,18 @@
 /* picture 요소 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.picture {
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid #2f2f2f;
+}
+
+.picture img {
+  max-width: 100%;
+  height: auto;
+}

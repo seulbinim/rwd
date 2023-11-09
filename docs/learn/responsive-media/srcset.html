@@ -1,1 +1,42 @@
-<!-- srcset 속성 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>srcset 속성</title>
+    <link rel="stylesheet" href="srcset.css" />
+  </head>
+  <body>
+    <div class="container">
+      <figure class="srcset">
+        <img
+          src="./images/image-src.png"
+          alt=""
+          srcset="
+            ./images/image-1x.png 1x,
+            ./images/image-2x.png 2x,
+            ./images/image-3x.png 3x
+          "
+        />
+      </figure>
+      <figure class="srcset">
+        <img
+          src="./images/lezhin-narrow.png"
+          alt=""
+          srcset="./images/lezhin-narrow.webp"
+        />
+      </figure>
+      <!-- <figure class="srcset">
+        <img
+          src="./images/normal-1920.jpg"
+          alt=""
+          srcset="
+            ./images/small-550.jpg    550w,
+            ./images/medium-1024.jpg 1024w,
+            ./images/large-1600.jpg  1600w
+          "
+        />
+      </figure> -->
+    </div>
+  </body>
+</html>

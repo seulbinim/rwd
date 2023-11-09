@@ -1,1 +1,22 @@
-/* srcset 속성 */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.srcset {
+  margin: 2rem;
+  padding: 2rem;
+  border: 1px solid #2f2f2f;
+
+  & img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.srcset:nth-child(3) {
+  width: 100%;
+}
