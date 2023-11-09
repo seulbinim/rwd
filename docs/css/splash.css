@@ -1,28 +1,38 @@
+/* 스플래시 영역 - 배경 */
 .splash-area {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: yellow;
+  background: var(--grayscale-white);
+  color: var(--primary-blue-1);
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  /* animation: fadeEffect 3000ms ease-in-out forwards; */
+
+  /* figure 요소 */
+  & .splash-logo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* img 요소 */
+  & .splash-image {
+    width: clamp(5rem, 32%, 9.375rem);
+  }
+
+  /* figcaption 요소 */
+  & .splash-caption {
+    white-space: nowrap;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 10vw, 3rem);
+  }
 }
 
-.splash-logo {
-  width: 30%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.splash-image {
-  width: 100%;
-}
-
-.splash-caption {
-  background-color: pink;
-  text-align: center;
-  font-size: clamp(1.5rem, 10vw, 6rem);
-  color: darkblue;
+@media (prefers-color-scheme: dark) {
+  .splash-area {
+    background: var(--primary-blue-1);
+    color: var(--grayscale-white);
+  }
 }
