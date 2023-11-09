@@ -1,1 +1,11 @@
 /* 반응형 iframe */
+.video {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.video iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
