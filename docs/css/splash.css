@@ -1,0 +1,28 @@
+.splash-area {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-logo {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-image {
+  width: 100%;
+}
+
+.splash-caption {
+  background-color: pink;
+  text-align: center;
+  font-size: clamp(1.5rem, 10vw, 6rem);
+  color: darkblue;
+}
