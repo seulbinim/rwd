@@ -1,1 +1,17 @@
-/* sizes 속성 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sizes {
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid #2f2f2f;
+}
+
+.sizes img {
+  max-width: 100%;
+  height: auto;
+}
