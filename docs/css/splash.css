@@ -7,19 +7,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* animation: fadeEffect 3000ms ease-in-out forwards; */
+  animation: fadeEffect 3000ms ease-in-out both;
 
   /* figure 요소 */
   & .splash-logo {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 100%;
+    width: 32%;
   }
 
   /* img 요소 */
   & .splash-image {
-    width: clamp(5rem, 32%, 9.375rem);
+    width: clamp(5rem, 100%, 9.375rem);
   }
 
   /* figcaption 요소 */
