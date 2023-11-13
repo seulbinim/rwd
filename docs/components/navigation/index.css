@@ -16,4 +16,14 @@
 
 /* 데스크탑 디바이스 */
 @media (min-width: 768px) {
+  .navigation ul {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: var(--spacing-sm);
+    color: var(--primary-blue-1);
+  }
+
+  .navigation .button-close {
+    display: none;
+  }
 }
