@@ -1,0 +1,12 @@
+.logo-link {
+  display: block;
+  width: 8.75em;
+  aspect-ratio: 10/1;
+  background-color: pink;
+}
+
+@media (min-width: 768px) {
+  .logo-link {
+    width: 10em;
+  }
+}
