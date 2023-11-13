@@ -16,6 +16,28 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
+    background: hsla(225, 57%, 10%, 1);
+    color: #fff;
+  }
+
+  .navigation ul {
+    margin: 0 var(--spacing-xl);
+    padding: 3.5rem 0;
+  }
+
+  .navigation li {
+    border-top: 1px solid hsla(225, 57%, 30%, 0.5);
+  }
+
+  .navigation a {
+    display: block;
+    padding: var(--spacing-md);
+    margin: 0 -20px;
+  }
+
+  .navigation a:hover,
+  .navigation a:focus {
+    background: var(--primary-blue-2);
   }
 
   .navigation .button-close {
