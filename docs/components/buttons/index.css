@@ -1,4 +1,30 @@
 /* 버튼 컨테이너 */
 .button-container {
-  background-color: yellow;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+.button-none {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.button {
+  --size: 3.125em;
+
+  user-select: none;
+  cursor: pointer;
+  width: var(--size);
+  height: var(--size);
+  padding: 1.125em 1em;
+  line-height: 1;
+  transition: all 200ms;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--grayscale-snow, #f5f5f5);
 }
