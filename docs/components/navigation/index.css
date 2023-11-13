@@ -5,3 +5,15 @@
   row-gap: 1rem;
   padding: 2rem;
 }
+
+.navigation {
+  background-color: yellow;
+}
+
+/* 모바일 디바이스 */
+@media (max-width: 768px) {
+}
+
+/* 데스크탑 디바이스 */
+@media (min-width: 768px) {
+}
