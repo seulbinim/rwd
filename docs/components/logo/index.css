@@ -38,17 +38,16 @@
 }
 
 /* 푸터에 사용한 모노톤 로고 */
-.mono-logo {
-  display: block;
+/* 푸터에서 해당 버튼을 가져다 사용할 때 width 값을 지정 */
+/* .mono-logo {
   width: 10em;
-  aspect-ratio: 10/1;
 }
 
 @media (min-width: 768px) {
   .mono-logo {
     width: 11.25em;
   }
-}
+} */
 
 .school {
   font-size: 5vw;
