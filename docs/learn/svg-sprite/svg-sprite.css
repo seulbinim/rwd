@@ -1,1 +1,5 @@
 /* SVG 스프라이트 */
+svg {
+  width: 50px;
+  height: 50px;
+}
