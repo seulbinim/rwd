@@ -12,6 +12,14 @@
 
 /* 모바일 디바이스 */
 @media (max-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+  }
+
+  .navigation .button-close {
+    align-self: flex-end;
+  }
 }
 
 /* 데스크탑 디바이스 */
