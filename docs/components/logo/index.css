@@ -1,3 +1,11 @@
+/* 콘텐츠 이미지 로고 */
+.logo-container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.5rem;
+  padding: 2rem;
+}
+
 .logo-link {
   display: block;
   width: 8.75em;
@@ -9,4 +17,13 @@
   .logo-link {
     width: 10em;
   }
+}
+
+/* 배경 이미지 로고 */
+.logo-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/brand.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
