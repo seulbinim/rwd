@@ -12,7 +12,6 @@
   display: block;
   width: var(--size);
   aspect-ratio: 10/1;
-  background-color: pink;
 }
 
 @media (min-width: 768px) {
