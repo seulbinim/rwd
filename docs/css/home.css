@@ -5,6 +5,19 @@
   }
 }
 
+/* 공지사항 */
+.notice {
+}
+
+.notice-headline {
+}
+
+.notice-article {
+}
+
+.notice-button {
+}
+
 /* 뉴스 */
 .news {
   background: var(--primary-blue-1);
