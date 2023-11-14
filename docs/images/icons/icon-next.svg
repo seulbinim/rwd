@@ -1,0 +1,17 @@
+<svg
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  fill="none"
+  aria-label="다음 공지사항 보기"
+>
+  <rect
+    x="-0.5"
+    y="0.5"
+    width="15"
+    height="15"
+    transform="matrix(-1 0 0 1 15 0)"
+    stroke="#F5F5F5"
+  />
+  <path d="M6.75 10.5L9.25 8L6.75 5.5" stroke="#F5F5F5" />
+</svg>

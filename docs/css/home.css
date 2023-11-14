@@ -1,10 +1,10 @@
-.inform-inner{
+/* 홍보영상, 공지사항, 뉴스 */
+.inform-inner {
   background: var(--primary-blue-1);
 }
 
 /* 홍보영상 */
 .youtube {
-  
   & iframe {
     aspect-ratio: 16/9;
   }
@@ -12,16 +12,17 @@
 
 /* 공지사항 */
 .notice {
-  background: linear-gradient(137deg, #263D83, #102457);
+  /* background: linear-gradient(-45deg, #263d83, #102457); */
+  background: repeating-radial-gradient(#263d83, #102457 20%);
   display: grid;
-  grid-template-columns: 125px 1fr;
-  grid-template-areas: "notice-headline notice-article"
-  "notice-button notice-article";
+  grid-template-columns: 100px 1fr;
+  grid-template-areas:
+    'notice-headline notice-article'
+    'notice-button notice-article';
 }
 
 .notice-headline {
   grid-area: notice-headline;
-  background: var(--primary-blue-1);
   color: #fff;
   padding: 15px;
   font-size: 15px;
@@ -39,22 +40,22 @@
   letter-spacing: -0.24px;
 }
 
-.notice-article-headline{
-  color: #24388D;
+.notice-article-headline {
+  color: #24388d;
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.3px;
 }
 
-.notice-article time{
-  color:  #878787;
+.notice-article time {
+  color: #878787;
   font-size: 11px;
   line-height: 1;
   letter-spacing: -0.22px;
 }
 
-.notice-article p{
+.notice-article p {
   margin-top: 15px;
 }
 
@@ -73,7 +74,7 @@
   text-transform: uppercase;
   padding: 1.25em;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'news-headline news-more'
     'news-list news-list';
@@ -105,10 +106,9 @@
 
   & a {
     width: calc(100% - 5.65em);
-    /* min-width: 0;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis; */
+    text-overflow: ellipsis;
   }
 
   & time {
@@ -133,7 +133,7 @@
 
   .inform-inner {
     display: grid;
-    grid-template-columns: 365px 375px;
+    grid-template-columns: 410px 355px;
     grid-template-areas:
       'youtube notice'
       'youtube news';
