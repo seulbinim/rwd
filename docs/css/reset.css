@@ -57,7 +57,7 @@ picture {
 iframe,
 video {
   width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 /* Inherit fonts for inputs and buttons */
