@@ -53,6 +53,13 @@ picture {
   display: block;
 }
 
+/* iframe, video 요소의 기본 스타일 */
+iframe,
+video {
+  width: 100%;
+  display: block;
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,
