@@ -16,6 +16,8 @@
     color: #fff;
     transition: all 400ms ease-in-out;
     backdrop-filter: blur(4px);
+    /* 임시로 지정 추후 삭제 요망 .....*/
+    display: none;
   }
 
   .navigation ul {
