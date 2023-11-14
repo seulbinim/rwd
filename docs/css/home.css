@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+  .inform {
+    background: var(--grayscale-snow);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5.15em;
+    padding-bottom: 5.15em;
+  }
+
+  .inform-inner {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 365px 375px;
+    grid-template-areas:
+      'youtube notice'
+      'youtube news';
+  }
+
+  .youtube {
+    grid-area: youtube;
+    background-color: yellow;
+  }
+
+  .notice {
+    grid-area: notice;
+    background-color: pink;
+  }
+
+  .news {
+    grid-area: news;
+    background-color: lime;
+  }
+}
