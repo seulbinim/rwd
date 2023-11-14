@@ -12,8 +12,10 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 3.125rem auto;
-    background: hsla(225, 57%, 10%, 1);
+    background: hsla(225, 57%, 10%, 0.85);
     color: #fff;
+    transition: all 400ms ease-in-out;
+    backdrop-filter: blur(4px);
   }
 
   .navigation ul {
