@@ -2,7 +2,25 @@
 .footer {
   background: var(--grayscale-black);
   color: var(--grayscale-light-gray);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+}
+
+.footer * {
+  font-style: normal;
 }
 
 @media (min-width: 768px) {
+  .footer-wrapper-1 {
+    border-bottom: 1px solid var(--grayscale-light-gray);
+  }
+  .guide {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    width: clamp(650px, 84.635%, 800px);
+    margin: 0 auto;
+  }
 }
