@@ -10,7 +10,7 @@
 .form-input {
   background: yellow;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .form-input-input {
@@ -29,26 +29,42 @@
   top: 50%;
   left: 0;
   transition: all 300ms;
+  pointer-events: none;
 }
 
-.form-input-input:focus + label {
+.form-input-input:focus + label,
+.form-input-input:valid + label {
   font-size: 12px;
   transform: translateY(-180%);
+}
+
+.icon-feedback {
+  width: 16px;
+  height: 16px;
+  display: none;
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  background-repeat: no-repeat;
 }
 
 .feedback {
   display: none;
 }
 
-.form-input-input:focus:valid + label + .icon-feedback {
-  background-color: lime;
-  width: 16px;
-  height: 16px;
-  border: 1px solid red;
+.form-input-input:focus + label + .icon-feedback {
+  display: none;
+}
+
+.form-input-input:focus:valid + label + .icon-feedback,
+.form-input-input:valid + label + .icon-feedback {
   display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
+  background-image: url('/images/svg/sprites-bg.svg#checked');
+}
+
+.form-input-input:focus:invalid + label + .icon-feedback {
+  display: block;
+  background-image: url('/images/svg/sprites-bg.svg#warning');
 }
 
 .form-input-input:invalid + label + span + .feedback {
