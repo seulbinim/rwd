@@ -5,3 +5,105 @@
   row-gap: 1rem;
   padding: 2rem;
 }
+
+/* 신 메뉴 컨테이너 */
+.new-menu {
+  background: var(--scondary-light-blue-1);
+  padding: 40px 0 20px;
+}
+
+.new-menu-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+/* 영문 단락 스타일 */
+.new-menu-text p[lang='en'] {
+  color: rgba(20, 24, 44, 0.9);
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 1.1; /* 27.5px */
+  letter-spacing: -1px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-menu-text p[lang='en'] em {
+  font-weight: 900;
+  color: #24388d;
+}
+
+@media (min-width: 768px) {
+  .new-menu {
+    padding: 50px 0;
+  }
+
+  .new-menu-text {
+    row-gap: 30px;
+  }
+
+  .new-menu-text p[lang='en'] {
+    flex-direction: row;
+    column-gap: 0.5em;
+  }
+}
+
+/* 구분선 */
+.new-menu .divider {
+  width: 40px;
+  height: 1px;
+  background: #000;
+}
+
+/* 한글 단락 스타일 */
+.new-menu p:nth-of-type(2) {
+  color: rgba(20, 24, 44, 0.9);
+  font-size: 14px;
+  line-height: 1.5; /* 21px */
+  letter-spacing: -0.56px;
+}
+
+/* 메뉴 보기 링크 */
+.go-menu {
+  padding: 8px 24px;
+  color: #24388d;
+  border: 1px solid currentColor;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1; /* 15.4px */
+  /* position: relative;
+  z-index: 10; */
+}
+
+/* 이디야 음료 이미지 */
+.new-menu-list {
+  /* background: yellow; */
+  pointer-events: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .new-menu-list li:first-child {
+    display: none;
+  }
+
+  .new-menu-list li:last-child {
+    transform: translateY(-10px);
+  }
+}
+
+@media (min-width: 768px) {
+  .new-menu-list {
+    width: 740px;
+    margin: 0 auto;
+    transform: translate(50px, -70px);
+  }
+}
