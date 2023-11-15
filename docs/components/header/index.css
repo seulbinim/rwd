@@ -4,6 +4,10 @@
   line-height: 1;
 }
 
+.header {
+  background: rgba(255, 255, 255, 0.95);
+}
+
 .header-inner {
   display: flex;
   flex-flow: row nowrap;
