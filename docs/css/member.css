@@ -2,14 +2,27 @@
   background: url('/images/coffee.avif') no-repeat 50% 0 / cover;
 }
 
+.membership .main {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+/* .membership {
+  background: url('/images/coffee-mobile.jpg') no-repeat 50% 0 / cover;
+}
+
+@media (min-width: 768px) {
+  .membership {
+    background: url('/images/coffee-desktop.jpg') no-repeat 50% 0;
+  }
+} */
+
 .member {
   color: #fefefe;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   padding: 70px 0 50px;
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(2px);
 }
 
 .member-headline {
