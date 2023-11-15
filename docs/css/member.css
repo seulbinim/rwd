@@ -128,18 +128,128 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: 2px;
   pointer-events: none;
 }
 
 .form-checkbox {
   appearance: none;
+  width: 12px;
+  height: 12px;
 }
 
 .form-checkbox-label {
-  padding-left: 20px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding-left: 4px;
 }
 
-.form-checkbox:checked + label .custom-checkbox {
+.form-checkbox:checked + .custom-checkbox {
   background-image: url('/images/icon-checked-square.svg');
+}
+
+:focus {
+  outline: 0;
+}
+
+:focus-visible {
+  border-radius: 2px;
+  box-shadow: 0 0 0 4px rgba(40, 70, 204, 0.9);
+}
+
+/* 로그인 및 회원 가입 링크 디자인 */
+.button-container {
+  user-select: none;
+  margin-top: 70px;
+  padding: 0;
+}
+
+.button-fill,
+.button-stroke {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* 로그인 및 회원가입 버튼의 기본 값 및 배경 이미지 지정 */
+.button-fill::after,
+.button-stroke::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.button-fill::after {
+  background-image: url(/images/icon-arrow-darkblue.svg);
+}
+
+.button-fill {
+  color: #24388d;
+  background-color: #fefefe;
+  margin-bottom: 15px;
+  border: 0;
+}
+
+.button-stroke {
+  opacity: 0.7;
+  border: 1px solid #fefefe;
+  color: #f5f5f5;
+  background-color: transparent;
+}
+
+.button-stroke:hover,
+.button-stroke:focus {
+  opacity: 1;
+}
+.button-stroke::after {
+  background-image: url(/images/icon-arrow-white.svg);
+}
+
+/* 로딩 중 .button-member-signin의 배경 이미지 변경 */
+.is--loading .button-fill {
+  cursor: not-allowed;
+}
+.is--loading .button-fill::after {
+  background-image: url(/images/icon-arrow-loading.svg);
+  transform-origin: center;
+  animation: spinner 0.2s linear infinite;
+}
+
+/* disabled 상태일 때 .button-member-signin의 배경 이미지 변경 */
+.is--disabled .button-fill {
+  color: #d2c9b6;
+}
+.is--disabled .button-fill::after {
+  background-image: url(/images/icon-arrow-disabled.svg);
+}
+
+/* Desktop UI 적용을 위한 Breakpoint */
+@media (min-width: 768px) {
+  /* 로그인 및 회원가입 버튼의 크기 및 배치 수정 */
+  .button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .button-fill,
+  .button-stroke {
+    width: 260px;
+  }
+  .button-fill {
+    margin-right: 20px;
+  }
 }
