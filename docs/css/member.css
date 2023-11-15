@@ -1,11 +1,5 @@
 .membership {
-  background: url('/images/coffee-mobile.jpg') no-repeat 50% 0;
-}
-
-@media (min-width: 768px) {
-  .membership {
-    background: url('/images/coffee-desktop.jpg') no-repeat 50% 0;
-  }
+  background: url('/images/coffee.avif') no-repeat 50% 0 / cover;
 }
 
 .member {
@@ -14,6 +8,8 @@
   flex-flow: column nowrap;
   align-items: center;
   padding: 70px 0 50px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
 }
 
 .member-headline {
@@ -34,6 +30,8 @@
 
 .member-form {
   margin-top: 110px;
+  width: 100%;
+  padding: 0 1em;
 }
 
 @media (min-width: 768px) {
