@@ -39,13 +39,11 @@
 @media (min-width: 768px) {
   .member-form {
     width: 540px;
-    border: 1px solid red;
   }
 }
 
 .form-input-wrapper {
   position: relative;
-  border: 1px solid blue;
   margin-top: 50px;
 }
 
@@ -53,18 +51,45 @@
   position: absolute;
   top: 24px;
   left: 0;
+  transition: all 300ms ease-in-out;
 }
 
 .form-input {
   background: transparent;
   width: 100%;
   height: 48px;
+  color: inherit;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+}
+
+.is--focus .form-input,
+.is--valid .form-input,
+.is--invalid .form-input {
+  border-width: 2px;
 }
 
 .form-message {
   display: none;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
 }
 
 .is--focus .form-input-label {
   font-size: 12px;
+  transform: translate(0, -20px);
+}
+.is--invalid {
+  background: url('/images/icon-warning.svg') no-repeat 100% 80%;
+  background-size: 16px 16px;
+}
+.is--valid {
+  background: url('/images/icon-checked.svg') no-repeat 100% 80%;
+  background-size: 16px 16px;
+}
+
+.is--invalid .form-message {
+  display: block;
 }
