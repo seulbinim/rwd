@@ -81,29 +81,74 @@
 }
 
 /* 이디야 음료 이미지 */
+/* 음료 정보 - 텍스트 스타일 */
+[class^='beverage-name--ko'] {
+  font-size: 16px;
+}
+[class^='beverage-name--en'] {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.beverage-name--ko-primary {
+  color: #2c68ae;
+  font-weight: 700;
+}
+.beverage-name--ko-secondary {
+  color: #72bde3;
+}
+.beverage-name--en-accent {
+  color: #a7d1e7;
+}
+
 .new-menu-list {
-  /* background: yellow; */
-  pointer-events: none;
+  /* border: 1px solid blue; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center;
+}
+
+.beverage {
+  /* background-color: yellow; */
+  position: relative;
+}
+
+.beverage-name {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  position: absolute;
+}
+
+.beverage-name.choco {
+  left: 0;
+  bottom: 0;
+}
+
+.beverage-name.rice {
+  top: 125px;
+  right: 20px;
+}
+
+.beverage-name.cheese {
+  left: 20px;
+  bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  .new-menu-list li:first-child {
+  .beverage-cheese {
     display: none;
-  }
-
-  .new-menu-list li:last-child {
-    transform: translateY(-10px);
   }
 }
 
 @media (min-width: 768px) {
   .new-menu-list {
-    width: 740px;
+    /* background: pink; */
+    width: clamp(740px, 93%, 900px);
     margin: 0 auto;
-    transform: translate(50px, -70px);
+    justify-content: space-between;
+  }
+  .beverage-cheese {
+    transform: translate(30%, -20%);
   }
 }
