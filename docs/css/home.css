@@ -74,7 +74,7 @@
   text-transform: uppercase;
   padding: 1.25em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 4.85em;
   grid-template-areas:
     'news-headline news-more'
     'news-list news-list';
