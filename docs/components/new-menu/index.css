@@ -8,11 +8,11 @@
 
 /* 신 메뉴 컨테이너 */
 .new-menu {
-  background: var(--scondary-light-blue-1);
-  padding: 40px 0 20px;
 }
 
 .new-menu-text {
+  padding: 40px 1em 20px;
+  background: var(--scondary-light-blue-1);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -39,11 +39,8 @@
 }
 
 @media (min-width: 768px) {
-  .new-menu {
-    padding: 50px 0;
-  }
-
   .new-menu-text {
+    padding: 50px 0;
     row-gap: 30px;
   }
 
@@ -105,15 +102,14 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  pointer-events: none;
 }
 
 .beverage {
-  /* background-color: yellow; */
   position: relative;
 }
 
 .beverage-name {
-  /* border: 1px solid red; */
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
@@ -136,6 +132,10 @@
 }
 
 @media (max-width: 768px) {
+  .new-menu-list {
+    transform: translateY(-50px);
+    padding: 0 1em;
+  }
   .beverage-cheese {
     display: none;
   }
@@ -143,10 +143,10 @@
 
 @media (min-width: 768px) {
   .new-menu-list {
-    /* background: pink; */
     width: clamp(740px, 93%, 900px);
     margin: 0 auto;
     justify-content: space-between;
+    transform: translateY(-100px);
   }
   .beverage-cheese {
     transform: translate(30%, -20%);
